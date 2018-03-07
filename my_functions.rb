@@ -5,6 +5,20 @@ return array_lengths.count
 end
 
 def sum_array(numbers)
- numbers = sum_array.sum
- return numbers
+  sum = 0
+  for i in numbers
+ sum += i
+end
+ return sum
+end
+
+def find_item(houses, house)
+
+  for i in houses
+    if i == house
+      return true
+
+    end
+  end
+  return false 
 end
