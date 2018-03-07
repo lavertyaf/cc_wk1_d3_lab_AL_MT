@@ -32,15 +32,36 @@ class My_Functions < MiniTest::Test
 
   # Write a function that has one parameter hash
   # It should return the first key from the hash
-  # def test_get_first_key
-  #   wallets = {
-  #     'Kat' => 12,
-  #     'John'  => 10,
-  #     'Darren'  => 1356,
-  #     'Zsolt' => 1
-  #   }
-  #   result = get_first_key( wallets )
-  #   assert_equal( 'Kat', result )
-  # end
+  def test_get_first_key
+    wallets = {
+      'Kat' => 12,
+      'John'  => 10,
+      'Darren'  => 1356,
+      'Zsolt' => 1
+    }
+    result = get_first_key( wallets )
+    assert_equal( 'Kat', result )
+  end
 
+# given this hash create a function that will return an array of capitals
+
+def test_array_of_countries
+countries = {
+  uk: {
+    capital: 'London',
+    population: 60
+  },
+  france: {
+    capital: 'Paris',
+    population: 70
+  },
+  italy: {
+    capital: 'Rome',
+    population: 56
+  }
+}
+result = array_of_countries(countries)
+assert_equal(['London', 'Paris', 'Rome'], result)
 end
+
+end 

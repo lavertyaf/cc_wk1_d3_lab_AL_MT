@@ -20,5 +20,19 @@ def find_item(houses, house)
 
     end
   end
-  return false 
+  return false
+end
+
+def get_first_key(hash)
+  return hash.keys.first
+
+end
+
+def array_of_countries(hash)
+capital_cities = []
+  for capitals in hash
+
+  capital_cities.push(capitals[1][:capital])
+  end
+  return capital_cities
 end
